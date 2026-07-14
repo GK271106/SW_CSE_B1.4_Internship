@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+
+<body>
+    <p>FORMS are used to collect user input and send it to a server for processing </p>
+    <form action="/submit" methods="post">
+        <label for="username">username: </label>
+        <input type="text" name="username" id="username" placeholder="enter the username">
+        <!-- validation using min lenght -->
+        <input type="password" name="" id="" placeholder="enter password" minlength="10">
+        <input type="email" name="" id="" placeholder="enter your email"><br>
+        <label for="age">Age:</label>
+        <!-- validation using min and max -->
+        <input type="number" placeholder="enter your age" min="1" max="100">  
+        <select name="" id="gender" place>
+            <option value="">select your gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select><br>
+        <input type="radio" name="username" id="username">option 1
+        <input type="radio" name="username" id="username">option 2
+        <label for="submit"></label>
+        <input type="submit" name="submit" id="">
+        <input type="reset" name="" id="">
+    </form>
+    <!-- form validation : client side validation -->
+    <P> The text entered in the form is coorect or not.if it is correct only then it will be submitted to the server
+        other
+        wise itll show error message</P>
+</body>
+
+</html>
