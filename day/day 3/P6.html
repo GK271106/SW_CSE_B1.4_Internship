@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio tag</title>
+</head>
+
+<body>
+    <!-- <audio src="sample-3s.mp3" controls>user browser does not support audio files</audio> -->
+    <!-- Audio formats 
+     1. Mp3
+     2. OGG
+     3. WAV
+     -->
+
+    <!-- Auto play -->
+    <audio src="sample-3s.mp3" autoplay controls>user browser does not support audio files</audio>
+
+    <!-- muted -->
+    <audio src="sample-3s.mp3" autoplay controls muted>user browser does not support audio files</audio>
+
+    <!-- loop -->
+    <audio src="sample-3s.mp3"  controls loop>user browser does not support audio files</audio>
+
+     <!-- preload -->
+    <!-- none : dont preload the video load only when user starts to play it -->
+    <!-- meta data : load only information like duration ,dimention and etc -->
+    <!-- auto:browser load video immediatly -->
+    <audio src="sample-3s.mp3"  controls=""  preload="none">your browser does not
+        support
+       audio</audio>
+
+
+
+</body>
+
+</html>
