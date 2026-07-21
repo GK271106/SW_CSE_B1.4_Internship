@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 2000px;
+            margin: 20px;
+        }
+
+        .box {
+            padding: 15px;
+            color: bisque;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .sticky-header {
+            position: sticky;
+            background-color: red;
+            top: 0;
+            z-index: 999px;
+        }
+
+        .static-box {
+            position: static;
+            background-color: blue;
+        }
+
+        .relative-box {
+            position: relative;
+            background-color: blueviolet;
+            top: 20px;
+            left: 20px;
+        }
+        .parent-container{
+            background-color: brown;
+            position: relative;
+            height: 120px;
+            border: 2px dashed blue;
+        }
+        .absolute-box{
+            position: absolute;
+            background-color: chartreuse;
+            top: 10px;
+            right: 10px;
+            margin: 0;
+        }
+        .fixed-box{
+            position: fixed;
+            background-color: grey;
+            right: 0px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>psoition property: how element is places on a webpage.It controls whethere an element stays in the
+        normal page flow or moves it relative to its neighbours or locks it in place when user scrolls
+    </p>
+    <p>
+        1.static
+        2.relative
+        3.absolute
+        4.fixed
+        5.sticky
+    </p>
+    <p>
+        diffrenece btw display and Position property: d helps to create a box , p helps tp move the box
+    </p>
+    <div class="box sticky-header">
+        im a sticky header .Ill scroll along with your scroll
+    </div>
+    <div class="box static-box">
+        i go away as u scroll
+
+    </div>
+    <div class="box relative-box">
+        this is a relative box
+    </div>
+
+    <div class="parent-container">
+        <div class="box absolute-box">
+            this is a absolute box
+        </div>
+    </div>
+
+    <div class="box fixed-box">
+        this is a fixed box
+    </div>
+
+
+</body>
+
+</html>
